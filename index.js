@@ -1,10 +1,10 @@
+#!/usr/bin/env node
 import { program } from "commander"
 import OpenAI from "openai"
 import dotenv from "dotenv"
 import ora from "ora"
 import pico from "picocolors"
 import clipboard from "clipboardy"
-
 dotenv.config()
 const argv = process.argv
 program.version("0.0.1").option("-s", "--save", "save to file")
